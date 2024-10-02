@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Interactive Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>Creative Studio</h1>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">Our Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Animated SVG -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <svg id="wave" viewBox="0 0 1440 320">
+                <path fill="#4CAF50" fill-opacity="1" d="M0,96L40,112C80,128,160,160,240,181.3C320,203,400,213,480,202.7C560,192,640,160,720,154.7C800,149,880,171,960,170.7C1040,171,1120,149,1200,144C1280,139,1360,149,1400,154.7L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+            </svg>
+            <h1>Welcome to Creative Studio</h1>
+            <p>Unleashing Creativity through Design and Technology</p>
+        </div>
+    </section>
+
+    <!-- Features Section with 3D Cards -->
+    <section id="features" class="features-section">
+        <h2>Our Work</h2>
+        <div class="card-container">
+            <div class="card" data-scroll="3d">
+                <div class="card-face card-front">
+                    <h3>Design</h3>
+                    <p>Creative and modern design solutions.</p>
+                </div>
+                <div class="card-face card-back">
+                    <p>Explore our design portfolio that brings your ideas to life.</p>
+                </div>
+            </div>
+
+            <div class="card" data-scroll="3d">
+                <div class="card-face card-front">
+                    <h3>Development</h3>
+                    <p>Innovative and scalable web development.</p>
+                </div>
+                <div class="card-face card-back">
+                    <p>Discover cutting-edge development techniques for your projects.</p>
+                </div>
+            </div>
+
+            <div class="card" data-scroll="3d">
+                <div class="card-face card-front">
+                    <h3>Marketing</h3>
+                    <p>Results-driven digital marketing.</p>
+                </div>
+                <div class="card-face card-back">
+                    <p>Grow your business with our marketing strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Background Transition -->
+    <section id="contact" class="contact-section">
+        <h2>Get in Touch</h2>
+        <button id="animate-bg-button">Animate Background</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
